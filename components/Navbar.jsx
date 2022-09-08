@@ -1,15 +1,20 @@
 import React from "react";
 import Link from "next/link";
+import { NewspaperIcon } from "@heroicons/react/24/outline";
 
 function Navbar() {
   return (
     <>
       <div className="bg-indigo-500 drop-shadow-lg">
         <div className="max-w-screen-2xl px-4 md:px-8 mx-auto">
-          <header className="flex gap-11 items-center py-8 px-8 md:py-8 ">
+          <header className="flex gap-11 items-center py-8 px-20 md:py-8 ">
             {/* <!-- logo - start --> */}
+
             <Link href="/" aria-label="logo">
-              <a className="inline-flex items-center text-white text-xl font-bold gap-2.5">News Update</a>
+              <a className="inline-flex items-center text-white text-xl font-bold gap-2.5">
+                <NewspaperIcon className="h-6 w-6" />
+                News Update
+              </a>
             </Link>
             {/* <!-- logo - end --> */}
 
