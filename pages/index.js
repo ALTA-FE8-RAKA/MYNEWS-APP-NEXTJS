@@ -36,7 +36,7 @@ const Index = ({ listNews }) => {
               return (
                 <>
                   <div className="flex flex-col bg-slate-300 border rounded-lg overflow-hidden" key={item.id}>
-                    <CardContent image={item.imageUrl} title={item.title} content={item.content} author={item.author} date={item.date} onClickDetail={() => handleDetailNews(item)} />
+                    <CardContent image={item.imageUrl} title={item.title} content={item.content} author={item.author} date={item.date} time={item.time} onClickDetail={() => handleDetailNews(item)} />
                   </div>
                 </>
               );

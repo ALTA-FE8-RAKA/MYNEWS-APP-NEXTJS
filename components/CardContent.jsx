@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-function CardContent({ image, title, author, date, onClickDetail }) {
+function CardContent({ image, title, author, date, time, onClickDetail }) {
   return (
     <>
       <div className="group h-48 md:h-64 block bg-gray-100 overflow-hidden relative cursor-pointer" onClick={onClickDetail}>
@@ -24,10 +24,11 @@ function CardContent({ image, title, author, date, onClickDetail }) {
             <div>
               <span className="block text-indigo-500">{author}</span>
               <span className="block text-gray-400 text-xs">{date}</span>
+              <span className="block text-gray-400 text-xs">{time}</span>
             </div>
           </div>
 
-          <span className="text-white bg-indigo-500 text-sm border rounded px-2 py-1 cursor-pointer hover:bg-indigo-400" onClick={onClickDetail}>
+          <span className="text-white bg-indigo-500 text-sm border rounded px-2 py-1 cursor-pointer hover:bg-indigo-400 mb-2" onClick={onClickDetail}>
             Article
           </span>
         </div>
