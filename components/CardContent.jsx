@@ -1,18 +1,18 @@
 import React from "react";
 import Image from "next/image";
 
-function CardContent({ image, title, author, date }) {
+function CardContent({ image, title, author, date, onClickDetail }) {
   return (
     <>
-      <a href="#" className="group h-48 md:h-64 block bg-gray-100 overflow-hidden relative">
+      <div className="group h-48 md:h-64 block bg-gray-100 overflow-hidden relative cursor-pointer" onClick={onClickDetail}>
         <Image src={image} loading="lazy" alt={title} className="w-full h-full object-cover object-center absolute inset-0 group-hover:scale-110 transition duration-200" width={600} height={600} />
-      </a>
+      </div>
 
       <div className="flex flex-col flex-1 p-4 sm:p-6">
         <h2 className="text-gray-800 text-lg font-semibold mb-2">
-          <a href="#" className="hover:text-indigo-500 active:text-indigo-600 transition duration-100">
+          <div onClick={onClickDetail} className="hover:text-indigo-500 active:text-indigo-600 transition duration-100 cursor-pointer">
             {title}
-          </a>
+          </div>
         </h2>
 
         <div className="flex justify-between items-end mt-auto">
@@ -27,7 +27,9 @@ function CardContent({ image, title, author, date }) {
             </div>
           </div>
 
-          <span className="text-gray-500 text-sm border rounded px-2 py-1">Article</span>
+          <span className="text-white bg-indigo-500 text-sm border rounded px-2 py-1 cursor-pointer hover:bg-indigo-400" onClick={onClickDetail}>
+            Article
+          </span>
         </div>
       </div>
     </>
