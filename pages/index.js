@@ -16,7 +16,7 @@ export const getServerSideProps = async () => {
 
 const handleDetailNews = (item) => {
   Router.push({
-    pathname: "/detailnews",
+    pathname: `/detailnews/`,
     query: {
       image: item.imageUrl,
       title: item.title,

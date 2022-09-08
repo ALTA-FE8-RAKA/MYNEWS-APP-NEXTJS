@@ -17,8 +17,8 @@ function CardContent({ image, title, author, date, onClickDetail }) {
 
         <div className="flex justify-between items-end mt-auto">
           <div className="flex items-center gap-2">
-            <div className="w-10 h-10 shrink-0 bg-gray-100 rounded-full overflow-hidden">
-              <Image src="https://source.unsplash.com/random/portrait" loading="lazy" alt="Photo by Brock Wegner" className="object-cover object-center" width={30} height={30} />
+            <div className="w-10 h-10 shrink-0 bg-gray-100 rounded-full overflow-hidden ">
+              <Image src="https://source.unsplash.com/random/portrait" loading="lazy" alt={author} className="object-cover object-center" width={30} height={30} />
             </div>
 
             <div>

@@ -14,7 +14,7 @@ function Navbar() {
             {/* <!-- logo - end --> */}
 
             {/* <!-- nav - start --> */}
-            <nav className="flex gap-12 text-white hover:text-slate-500 active:text-slate-700 text-lg font-semibold transition duration-100">
+            <nav className="flex gap-12 text-neutral-200 hover:text-neutral-400 active:text-neutral-700 text-lg font-semibold transition duration-100">
               <Link href="/">
                 <a>Home</a>
               </Link>
