@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import person from "../public/person.jpg";
 
 function CardContent({ image, title, author, date, time, onClickDetail }) {
   return (
@@ -18,7 +19,7 @@ function CardContent({ image, title, author, date, time, onClickDetail }) {
         <div className="flex justify-between items-end mt-auto">
           <div className="flex items-center gap-2">
             <div className="w-10 h-10 shrink-0 bg-gray-100 rounded-full overflow-hidden ">
-              <Image src="https://source.unsplash.com/random/portrait" loading="lazy" alt={author} className="object-cover object-center" width={30} height={30} />
+              <Image src={person} loading="lazy" alt={author} className="object-cover object-center" width={300} height={300} />
             </div>
 
             <div>
