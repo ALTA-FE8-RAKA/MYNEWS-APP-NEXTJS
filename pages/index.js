@@ -4,7 +4,7 @@ import CardContent from "../components/CardContent";
 import Navbar from "../components/Navbar";
 
 export const getServerSideProps = async () => {
-  const response = await axios.get(`https://inshorts.deta.dev/news?category=technology`);
+  const response = await axios.get(`https://inshorts.deta.dev/news?category=startup`);
   const listNews = response.data.data;
   return {
     props: {

@@ -7,16 +7,16 @@ function Navbar() {
     <>
       <div className="bg-indigo-400 drop-shadow-lg">
         <div className="max-w-screen-2xl px-4 md:px-8 mx-auto">
-          <header className="flex gap-8 items-center py-4 md:py-8 ">
+          <header className="flex gap-11 items-center py-8 px-8 md:py-8 ">
             {/* <!-- logo - start --> */}
-            <Link href={url} className="inline-flex items-center text-white text-2xl md:text-3xl font-bold gap-2.5" aria-label="logo">
-              <a>News Update</a>
+            <Link href={url} aria-label="logo">
+              <a className="inline-flex items-center text-white text-xl font-bold gap-2.5">News Update</a>
             </Link>
             {/* <!-- logo - end --> */}
 
             {/* <!-- nav - start --> */}
-            <nav className="hidden lg:flex gap-12">
-              <Link href={url} className="text-white hover:text-slate-500 active:text-slate-700 text-lg font-semibold transition duration-100">
+            <nav className="flex gap-12 text-white hover:text-slate-500 active:text-slate-700 text-lg font-semibold transition duration-100">
+              <Link href={url}>
                 <a>Home</a>
               </Link>
             </nav>

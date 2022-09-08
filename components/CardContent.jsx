@@ -1,11 +1,11 @@
 import React from "react";
 import Image from "next/image";
 
-function CardContent({ image, title, content, author, date }) {
+function CardContent({ image, title, author, date }) {
   return (
     <>
       <a href="#" className="group h-48 md:h-64 block bg-gray-100 overflow-hidden relative">
-        <Image src={image} loading="lazy" alt="Photo by Minh Pham" className="w-full h-full object-cover object-center absolute inset-0 group-hover:scale-110 transition duration-200" width={300} height={300} />
+        <Image src={image} loading="lazy" alt={title} className="w-full h-full object-cover object-center absolute inset-0 group-hover:scale-110 transition duration-200" width={600} height={600} />
       </a>
 
       <div className="flex flex-col flex-1 p-4 sm:p-6">
@@ -15,10 +15,6 @@ function CardContent({ image, title, content, author, date }) {
           </a>
         </h2>
 
-        <hr className="border-top border-slate-500" />
-
-        <p className="text-gray-500 my-8 ">{content}</p>
-
         <div className="flex justify-between items-end mt-auto">
           <div className="flex items-center gap-2">
             <div className="w-10 h-10 shrink-0 bg-gray-100 rounded-full overflow-hidden">
@@ -27,7 +23,7 @@ function CardContent({ image, title, content, author, date }) {
 
             <div>
               <span className="block text-indigo-500">{author}</span>
-              <span className="block text-gray-400 text-sm">{date}</span>
+              <span className="block text-gray-400 text-xs">{date}</span>
             </div>
           </div>
 
